@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>英超豪门赞助商 助力玩转世界杯</title>
+
+<style>
+
+*{
+    box-sizing:border-box;
+}
+
+body{
+    margin:0;
+    background:#f5f5f5;
+    font-family:"Microsoft YaHei",sans-serif;
+    color:#333;
+}
+
+/* 顶部标题 */
+
+.header{
+    background:linear-gradient(135deg,#003366,#0066cc);
+    color:#fff;
+    text-align:center;
+    padding:35px 20px;
+}
+
+.header h1{
+    margin:0;
+    font-size:38px;
+    font-weight:bold;
+    line-height:1.3;
+}
+
+/* 主内容 */
+
+.banner{
+    max-width:900px;
+    margin:15px auto;
+    background:#fff;
+    border-radius:12px;
+    overflow:hidden;
+    box-shadow:0 2px 12px rgba(0,0,0,.12);
+}
+
+.banner img{
+    width:100%;
+    display:block;
+}
+
+.content{
+    padding:25px;
+}
+
+.step{
+    margin-bottom:18px;
+    padding:16px;
+    background:#f8f8f8;
+    border-left:5px solid #0066cc;
+    border-radius:8px;
+}
+
+.step-title{
+    font-size:22px;
+    font-weight:bold;
+    margin-bottom:8px;
+    color:#0066cc;
+}
+
+.step p{
+    margin:0;
+    line-height:1.8;
+    font-size:16px;
+}
+
+.center{
+    text-align:center;
+}
+
+/* 按钮 */
+
+.btn{
+    display:inline-block;
+    margin-top:20px;
+    background:#ff6600;
+    color:#fff;
+    text-decoration:none;
+    padding:16px 40px;
+    border-radius:10px;
+    font-size:22px;
+    font-weight:bold;
+    box-shadow:0 4px 10px rgba(255,102,0,.3);
+}
+
+/* 免责声明 */
+
+.disclaimer{
+    max-width:900px;
+    margin:20px auto 40px;
+    padding:20px;
+    color:#777;
+    font-size:12px;
+    line-height:1.8;
+}
+
+/* 引导蒙层 */
+
+.guide{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,.85);
+    z-index:99999;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.hidden{
+    display:none;
+}
+
+.guide-box{
+    width:82%;
+    max-width:340px;
+    background:#fff;
+    border-radius:14px;
+    padding:22px;
+    text-align:center;
+}
+
+.guide-box h3{
+    margin-top:0;
+    margin-bottom:12px;
+    color:#0066cc;
+    font-size:24px;
+}
+
+.guide-box p{
+    margin:0;
+    line-height:1.8;
+    font-size:17px;
+}
+
+.guide-btn{
+    margin-top:20px;
+    border:none;
+    background:#ff6600;
+    color:#fff;
+    padding:12px 28px;
+    border-radius:8px;
+    font-size:18px;
+    cursor:pointer;
+}
+
+/* 箭头 */
+
+.arrow-top-right{
+    position:absolute;
+    top:20px;
+    right:20px;
+    font-size:80px;
+    color:#fff;
+    animation:flash 1s infinite;
+}
+
+@keyframes flash{
+
+    0%{
+        opacity:.3;
+    }
+
+    50%{
+        opacity:1;
+    }
+
+    100%{
+        opacity:.3;
+    }
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- 第一步 -->
+
+<div id="guide1" class="guide">
+
+
+<div class="arrow-top-right">↗</div>
+
+<div class="guide-box">
+
+    <h3>第一步</h3>
+
+    <p>
+        点击微信右上角的「...」
+        <br>
+        选择「在浏览器打开」
+    </p>
+
+    <button class="guide-btn"
+            onclick="nextGuide(1)">
+        我知道了
+    </button>
+
+</div>
+
+
+</div>
+
+<!-- 第二步 -->
+
+<div id="guide2" class="guide hidden">
+
+
+<div class="guide-box">
+
+    <h3>第二步</h3>
+
+    <p>
+        点击“立即加入”按钮
+    </p>
+
+    <button class="guide-btn"
+            onclick="nextGuide(2)">
+        我知道了
+    </button>
+
+</div>
+
+
+</div>
+
+<!-- 第三步 -->
+
+<div id="guide3" class="guide hidden">
+
+
+<div class="guide-box">
+
+    <h3>第三步</h3>
+
+    <p>
+        完成手机注册后
+        <br>
+        请务必用截图和纸笔
+        <br>
+        记录用户名和密码
+    </p>
+
+    <button class="guide-btn"
+            onclick="nextGuide(3)">
+        开始体验
+    </button>
+
+</div>
+
+
+</div>
+
+<!-- 标题 -->
+
+<div class="header">
+
+
+<h1>
+    英超豪门赞助商<br>
+    助力玩转世界杯
+</h1>
+
+
+</div>
+
+<!-- 内容 -->
+
+<div class="banner">
+
+
+<img src="newca.jpg" alt="纽卡斯尔联">
+
+<div class="content">
+
+    <div class="step">
+        <div class="step-title">第一步</div>
+        <p>点击右上角“...”菜单，选择“在浏览器打开”。</p>
+    </div>
+
+    <div class="step">
+        <div class="step-title">第二步</div>
+        <p>点击“立即加入”按钮。</p>
+    </div>
+
+    <div class="step">
+        <div class="step-title">第三步</div>
+        <p>完成手机注册后，请务必用截图和纸笔，记录用户名和密码。</p>
+    </div>
+
+    <div class="center">
+
+        <a class="btn" href="http://play178-f88ab.com/ghemhv">
+            立即加入
+        </a>
+
+    </div>
+
+</div>
+
+
+</div>
+
+<div class="disclaimer">
+
+<strong>免责声明：</strong>
+
+<br><br>
+
+本网站仅提供资料和数据服务。指向博彩公司网站的链接仅供参考，不构成认可。访问这些网站需自行承担风险。<br>
+
+本网站上显示的所有信息仅用于信息参考和交流目的。本网站不鼓励、推广或协助赌博。确保访问和使用博彩公司服务在您所在地区合法是您的责任。<br>
+
+本网站不对因使用本网站或依赖本文所提供信息而产生的任何损害、损失或费用承担责任。
+
+</div>
+
+<script>
+
+function nextGuide(step){
+
+    document
+        .getElementById("guide"+step)
+        .classList.add("hidden");
+
+    var nextGuideBox =
+        document.getElementById("guide"+(step+1));
+
+    if(nextGuideBox){
+        nextGuideBox.classList.remove("hidden");
+    }
+
+}
+
+</script>
+
+</body>
+</html>
